@@ -1,8 +1,9 @@
 function sendTranslation(from_language, to_language, user_text) {
-  //   const apiKey = 'sk-proj-LCqDnyCknSBC9BrOK //remove me too// qcsT3BlbkFJ4lS9S53ra3Derc2N9njJ';
+  const apiKey =
+    'sk-proj-LCqDnyCknSBC9BrOK remove me qcsT3BlbkFJ4lS9S53ra3Derc2N9njJ';
   //UNCOMMENT LINE 2 AND REMOVE THE 'REMOVE ME' SECTION, TO ALLOW THIS EXTENSION TO WORK.
-  //DO NOT COMMIT WITHOUT COMMENTING OUT, OTHERWISE GITHUB WILL NOT ALLOW PUSHING TO ITS SITE.
-  //KEYS, EVEN IN PREVIOUS COMMITS, WILL CAUSE PREVENT GITHUB FROM ALLOWING PUSHING.
+  //DON'T COMMIT WITHOUT 1) COMMENTING OUT LINE 2, AND 2) BREAKING UP THE KEY, OR ELSE GITHUB WON'T ALLOW PUSHING TO ITS SITE.
+  //API KEYS, EVEN IN PREVIOUS COMMITS, WILL CAUSE GITHUB TO BLOCK PUSHING.
   const url = 'https://api.openai.com/v1/chat/completions';
   const data = {
     model: 'gpt-3.5-turbo',
